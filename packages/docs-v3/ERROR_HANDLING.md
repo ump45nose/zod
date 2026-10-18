@@ -229,7 +229,7 @@ z.string().parse("adsf", { errorMap: myErrorMap });
 
 ## A working example
 
-Let's look at a practical example of of customized error map:
+Let's look at a practical example of customized error map:
 
 ```ts
 import * as z from "zod";
