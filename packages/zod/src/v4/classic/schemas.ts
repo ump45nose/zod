@@ -1284,8 +1284,8 @@ export interface _ZodBigInt<T extends core.$ZodBigIntInternals = core.$ZodBigInt
   /** Alias of `.gte()` */
   min(value: bigint, params?: string | core.$ZodCheckGreaterThanParams): this;
   gt(value: bigint, params?: string | core.$ZodCheckGreaterThanParams): this;
-  /** Alias of `.lte()` */
   lte(value: bigint, params?: string | core.$ZodCheckLessThanParams): this;
+  /** Alias of `.lte()` */
   max(value: bigint, params?: string | core.$ZodCheckLessThanParams): this;
   lt(value: bigint, params?: string | core.$ZodCheckLessThanParams): this;
   positive(params?: string | core.$ZodCheckGreaterThanParams): this;
