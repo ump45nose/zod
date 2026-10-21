@@ -155,7 +155,7 @@ While `z.treeifyError()` is useful for traversing a potentially complex nested s
 
 ```ts
 const flattened = z.flattenError(result.error);
-// { errors: string[], properties: { [key: string]: string[] } }
+// { formErrors: string[], fieldErrors: { [key: string]: string[] } }
 
 {
   formErrors: [ 'Unrecognized key: "extraKey"' ],
