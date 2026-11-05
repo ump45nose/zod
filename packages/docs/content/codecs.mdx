@@ -230,10 +230,10 @@ All checks (`.refine()`, `.min()`, `.max()`, etc.) are still executed in both di
 ```ts
 const schema = stringToDate.refine((date) => date.getFullYear() >= 2000, "Must be this millennium");
 
-schema.encode(new Date("2000-01-01"));
-// => Date
+schema.encode(new Date(2000, 0, 1));
+// => string
 
-schema.encode(new Date("1999-01-01"));
+schema.encode(new Date(1999, 0, 1));
 // => ❌ ZodError: [
 //   {
 //     "code": "custom",
